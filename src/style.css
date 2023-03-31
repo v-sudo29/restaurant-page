@@ -29,24 +29,32 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 10px;
+  gap: 2rem;
   padding: 2rem;
   min-height: 10vh;
   background-color: #f4f4f5;
   border: 2px solid black;
 }
 
+.header-title-div {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
 .header-title {
-  border: 2px solid red;
   font-size: 2rem;
   font-weight: 400;
   text-align: center;
 }
 
+.logo-icon-div > img {
+  height: 1.5rem;
+}
+
 .header-links-div {
   min-height: 2rem;
   display: flex;
-  border: 2px solid red;
   gap: 2rem;
 }
 
@@ -64,12 +72,12 @@ body {
   /* border: 2px solid red; */
 }
 
-.phone-icon > img {
-  border: 2px solid blue;
+.phone-icon-div > img {
   height: 1.6rem;
 }
 
 .phone-number {
   font-size: 1.2rem;
   font-weight: 100;
+  text-align: center;
 }
