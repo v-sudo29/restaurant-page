@@ -1,3 +1,5 @@
+import phoneSVG from './phone.svg';
+
 // Inserts header function
 export default function pageHeader() {
   // Select body tag
@@ -13,6 +15,11 @@ export default function pageHeader() {
   const phoneNumberDiv = document.createElement('div');
   const phoneIcon = document.createElement('div');
   const phoneNumber = document.createElement('div');
+  const phoneImg = document.createElement('img');
+
+  // Add icons
+  const phoneIconSource = new Image();
+  phoneIconSource.src = phoneSVG;
 
   // Add attributes
   headerDiv.classList.add('header-div');
@@ -24,6 +31,7 @@ export default function pageHeader() {
   phoneNumberDiv.classList.add('phone-number-div');
   phoneNumber.classList.add('phone-number');
   phoneIcon.classList.add('phone-icon');
+  phoneImg.classList.add('img-phone');
 
   // Add inner HTML
   headerTitle.innerHTML = 'Dessert Heaven';
@@ -37,6 +45,7 @@ export default function pageHeader() {
   headerNav.appendChild(menu);
   headerNav.appendChild(contact);
 
+  phoneIcon.appendChild(phoneIconSource);
   phoneNumberDiv.appendChild(phoneIcon);
   phoneNumberDiv.appendChild(phoneNumber);
 
@@ -45,4 +54,7 @@ export default function pageHeader() {
   headerDiv.appendChild(phoneNumberDiv);
 
   contentDiv.appendChild(headerDiv);
+
+  const checker = document.querySelector('.phone-icon');
+  console.log(checker);
 }

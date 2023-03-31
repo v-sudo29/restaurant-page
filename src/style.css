@@ -7,6 +7,7 @@
 
 *, *:before, *:after {
   box-sizing: inherit;
+  font-family: 'Roboto';
 }
 
 /* Body */
@@ -16,7 +17,6 @@ body {
   margin: 0;
   padding: 0;
   border: 2px solid red;
-  font-family: 'Roboto';
 }
 
 #content {
@@ -28,28 +28,48 @@ body {
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 10px;
+  padding: 2rem;
   min-height: 10vh;
+  background-color: #f4f4f5;
   border: 2px solid black;
 }
 
 .header-title {
   border: 2px solid red;
   font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
 }
 
 .header-links-div {
   min-height: 2rem;
   display: flex;
   border: 2px solid red;
-  gap: 10px;
+  gap: 2rem;
+}
+
+.header-links-div > button {
+  border: none;
+  cursor: pointer;
+  background-color: #f4f4f5;
+  font-size: 1.3rem;
+  font-weight: 100;
 }
 
 .phone-number-div {
-  border: 2px solid red;
+  display: flex;
+  gap: 0.5rem;
+  /* border: 2px solid red; */
 }
 
-.img-phone {
-  height: 2rem;
+.phone-icon > img {
+  border: 2px solid blue;
+  height: 1.6rem;
+}
+
+.phone-number {
+  font-size: 1.2rem;
+  font-weight: 100;
 }

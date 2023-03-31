@@ -10,14 +10,14 @@ document.querySelector('body').appendChild(contentDiv);
 // Page header
 pageHeader();
 
-  // Add phone icon to phone div
-  const phoneIcon = new Image();
-  phoneIcon.src = phoneSVG;
+  // // Add phone icon to phone div
+  // const phoneIcon = new Image();
+  // phoneIcon.src = phoneSVG;
 
-  const phoneIconDiv = document.querySelector('.phone-icon');
-  const phoneImg = document.createElement('img');
-  phoneImg.classList.add('img-phone');
-  phoneImg.setAttribute('src', `${phoneSVG}`);
-  phoneIconDiv.appendChild(phoneImg);
+  // const phoneIconDiv = document.querySelector('.phone-icon');
+  // const phoneImg = document.createElement('img');
+  // phoneImg.classList.add('img-phone');
+  // phoneImg.setAttribute('src', `${phoneSVG}`);
+  // phoneIconDiv.appendChild(phoneImg);
 
 console.log('hi there!!!');
