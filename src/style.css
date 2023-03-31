@@ -36,6 +36,7 @@ body {
   border: 2px solid black;
 }
 
+/* Title */
 .header-title-div {
   display: flex;
   gap: 0.6rem;
@@ -52,6 +53,7 @@ body {
   height: 1.5rem;
 }
 
+/* Nav Links */
 .header-links-div {
   min-height: 2rem;
   display: flex;
@@ -66,10 +68,10 @@ body {
   font-weight: 100;
 }
 
+/* Phone number */
 .phone-number-div {
   display: flex;
   gap: 0.5rem;
-  /* border: 2px solid red; */
 }
 
 .phone-icon-div > img {
