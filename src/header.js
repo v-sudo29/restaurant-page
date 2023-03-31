@@ -3,6 +3,7 @@ import logoSVG from './logo.svg';
 
 // Inserts header function
 export default function pageHeader() {
+
   // Select body tag
   const contentDiv = document.getElementById('content');
 
@@ -45,22 +46,24 @@ export default function pageHeader() {
   contact.innerHTML = 'Contact';
   phoneNumber.innerHTML = '(415)-100-2000';
 
-  // Append elements
-  phoneIcon.appendChild(phoneIconSource);
-  logoIconDiv.appendChild(logoIconSource);
-  phoneNumberDiv.appendChild(phoneIcon);
-  phoneNumberDiv.appendChild(phoneNumber);
+  // Return appended elements
+  return [
+    phoneIcon.appendChild(phoneIconSource),
+    logoIconDiv.appendChild(logoIconSource),
+    phoneNumberDiv.appendChild(phoneIcon),
+    phoneNumberDiv.appendChild(phoneNumber),
 
-  headerTitleDiv.appendChild(logoIconDiv);
-  headerTitleDiv.appendChild(headerTitle);
+    headerTitleDiv.appendChild(logoIconDiv),
+    headerTitleDiv.appendChild(headerTitle),
 
-  headerNav.appendChild(home);
-  headerNav.appendChild(menu);
-  headerNav.appendChild(contact);
+    headerNav.appendChild(home),
+    headerNav.appendChild(menu),
+    headerNav.appendChild(contact),
 
-  headerDiv.appendChild(headerTitleDiv);
-  headerDiv.appendChild(headerNav);
-  headerDiv.appendChild(phoneNumberDiv);
+    headerDiv.appendChild(headerTitleDiv),
+    headerDiv.appendChild(headerNav),
+    headerDiv.appendChild(phoneNumberDiv),
 
-  contentDiv.appendChild(headerDiv);
+    contentDiv.appendChild(headerDiv),
+  ]
 }
