@@ -6,10 +6,9 @@ import './style.css';
 const contentDiv = document.createElement('div');
 contentDiv.setAttribute('id', 'content');
 document.querySelector('body').appendChild(contentDiv);
-const divContent = document.querySelector('#content');
 
 // Page header
-divContent.appendChild(pageHeader());
+pageHeader();
 
 // Hero content
 heroContent();

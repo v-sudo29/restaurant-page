@@ -21,6 +21,7 @@ body {
 
 #content {
   display: flex;
+  flex-direction: column;
 }
 
 /* Header */
@@ -28,12 +29,12 @@ body {
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 2rem;
-  padding: 2rem;
+  padding: 2rem 6rem;
   min-height: 10vh;
   background-color: #f4f4f5;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 /* Title */
@@ -82,4 +83,19 @@ body {
   font-size: 1.2rem;
   font-weight: 100;
   text-align: center;
+}
+
+/* Hero Content */
+.hero-content-div {
+  display: flex;
+  padding: 6rem;
+  border: 1px solid red;
+}
+
+.hero-text {
+  font-size: 3.5rem;
+}
+
+.hero-image-div > img {
+  height: 30rem;
 }
