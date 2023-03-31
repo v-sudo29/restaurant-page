@@ -20,7 +20,7 @@ export default function pageHeader() {
   contact.classList.add('contact');
 
   // Add inner HTML
-  headerTitle.innerHTML = 'Flamey-o!';
+  headerTitle.innerHTML = 'Flamey-o!s';
   home.innerHTML = 'Home';
   menu.innerHTML = 'Menu';
   contact.innerHTML = 'Contact';
