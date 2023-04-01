@@ -130,6 +130,7 @@ body {
   cursor: pointer;
   border: none;
   font-size: 1rem;
+  font-weight: 400;
 }
 
 .home-order-button {
