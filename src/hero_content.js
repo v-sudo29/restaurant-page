@@ -11,6 +11,8 @@ export default function heroContent() {
   const heroText = document.createElement('div');
   const supportingText = document.createElement('div');
   const buttonsDiv = document.createElement('div');
+  const statsDiv = document.createElement('div');
+  const statsSupportingText = document.createElement('div');
   const heroImageDiv = document.createElement('div');
 
   // Create buttons
