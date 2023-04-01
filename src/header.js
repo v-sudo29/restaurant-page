@@ -4,7 +4,7 @@ import logoSVG from './logo.svg';
 // Inserts header function
 export default function pageHeader() {
 
-  // Select body tag
+  // Select body content div
   const contentDiv = document.getElementById('content');
 
   // Create elements
@@ -63,7 +63,6 @@ export default function pageHeader() {
   headerDiv.appendChild(headerNav);
   headerDiv.appendChild(phoneNumberDiv);
 
-  // Return appended elements
+  // Return appended content div
   return contentDiv.appendChild(headerDiv);
-
 }
