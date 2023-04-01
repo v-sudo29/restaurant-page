@@ -25,7 +25,7 @@ export default function heroContent() {
 
   // Add inner HTML
   heroText.innerHTML = 'Enjoy Your Favorite Desserts';
-  supportingText.innerHTML = 'Indulge in our world-famous desserts today!';
+  supportingText.innerHTML = 'Indulge in our world-famous, exquisite, handmade desserts for any occasion.';
 
   // Append elements
   heroTextDiv.appendChild(heroText);

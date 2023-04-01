@@ -8,6 +8,7 @@
 *, *:before, *:after {
   box-sizing: inherit;
   font-family: 'Roboto';
+  color: #27272a;
 }
 
 /* Body */
@@ -16,7 +17,6 @@ body {
   min-width: 100vw;
   margin: 0;
   padding: 0;
-  border: 2px solid red;
 }
 
 #content {
@@ -34,7 +34,6 @@ body {
   padding: 2rem 6rem;
   min-height: 10vh;
   background-color: #f4f4f5;
-  border: 1px solid black;
 }
 
 /* Title */
@@ -88,14 +87,48 @@ body {
 /* Hero Content */
 .hero-content-div {
   display: flex;
+  justify-content: center;
   padding: 6rem;
+  gap: 6rem;
+  background: linear-gradient(
+    to top,
+    #27272a 0%,
+    #27272a 35%,
+    #f4f4f5 0%,
+    #f4f4f5 100%
+    );
+}
+
+.hero-text-div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 35rem;
   border: 1px solid red;
 }
 
 .hero-text {
-  font-size: 3.5rem;
+  font-size: 4.3rem;
+  font-weight: 400;
+}
+
+.supporting-text {
+  font-size: 1.2rem;
+  font-weight: 200;
+  line-height: 2rem;
+}
+
+.hero-image-div {
+  height: 40.75rem;
+  border: double 0.4rem transparent;
+  border-radius: 0.6rem;
+  background-image: linear-gradient(45deg, rgb(194, 194, 194), rgb(29, 17, 10)),
+                    linear-gradient(45deg, rgb(194, 194, 194), rgb(29, 17, 10));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
 .hero-image-div > img {
-  height: 30rem;
+  height: 40rem;
+  border-radius: 0.4rem;
 }
