@@ -10,5 +10,5 @@ document.querySelector('body').appendChild(contentDiv);
 // Page header
 pageHeader();
 
-// Hero content
+// Initial page load: Home
 heroContent();
