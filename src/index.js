@@ -36,4 +36,4 @@ contactButton.addEventListener('click', () => {
 });
 
 // Initial page load: Home
-pageContact();
+pageHome();
