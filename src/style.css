@@ -84,8 +84,9 @@ body {
   text-align: center;
 }
 
-/* Hero Content */
+/* Home Content */
 .hero-content-div {
+  max-height: 80vh;
   display: flex;
   justify-content: center;
   padding: 6rem;
@@ -139,11 +140,19 @@ body {
   box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.4);
 }
 
+.home-order-button:hover {
+  opacity: 0.9;
+}
+
 .home-menu-button {
   padding: 0.5rem 2rem;
   background-color: #f4f4f5;
   text-decoration: underline;
   text-decoration-color:#bababa;
+}
+
+.home-menu-button:hover {
+  opacity: 0.6;
 }
 
 /* Stats */
@@ -270,4 +279,29 @@ body {
 
 .contact-phone-number {
   font-weight: 700;
+}
+
+/* Footer */
+.footer-div {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color:#27272a;
+}
+
+.footer-text {
+  color: #f4f4f5;
+  font-size: 1.1rem;
+  font-weight: 400;
+  word-spacing: 0.1rem;
+}
+
+.footer-logo > a > img {
+  width: 1.4rem;
+}
+
+.footer-logo > a > img:hover {
+  opacity: 0.6;
 }
