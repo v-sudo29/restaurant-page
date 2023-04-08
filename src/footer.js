@@ -25,6 +25,5 @@ export default function footer() {
   footerDiv.appendChild(footerLogo);
 
   // Return appended footer
-  console.log(footerDiv);
   return contentDiv.appendChild(footerDiv);
 }
