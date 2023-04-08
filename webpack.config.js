@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/index.js',
   plugins: [
     new HtmlWebpackPLugin({
-      title: 'Output Management',
+      title: 'Restaurant Page',
     }),
   ],
   output: {
